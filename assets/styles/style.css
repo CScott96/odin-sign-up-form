@@ -1,0 +1,32 @@
+:root {
+	--white: #f9fafb;
+	--black: #1d1d1d;
+	--primary: #adca45;
+	--secondary: #c9cef9;
+}
+
+body {
+	background-color: var(--white);
+	color: var(--black);
+	font-family: "Doto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+	    "ROND" 100;
+	display: grid;
+	grid-template-columns: 1fr;
+	@media screen and (min-width: 979px) {
+		grid-template-columns: 1fr 2fr;
+	}
+	h1,
+	h2 {
+		font-weight: 900;
+	}
+	button {
+		background-color: var(--primary);
+		color: var(--black);
+		padding: 0.5rem 2rem;
+		border: none;
+	}
+}

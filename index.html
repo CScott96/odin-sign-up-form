@@ -3,9 +3,45 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta charset="UTF-8">
-        	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Doto:wght,ROND@100..900,100&display=swap" rel="stylesheet">
+		<link href="./assets/styles/style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Odin Sign-up Form</title>
 	</head>
 	<body>
+		<div class="banner">
+			<div class="logo-section"></div>
+			<div class="banner-footer"></div>
+		</div>
+		<div class="form">
+			<h1>This is not a real online service! This is the odin project form to showcase html and css knowledge</h1>
+			<div class="form-cont">
+				<h2>Lets do this!</h2>
+			<form method="" action="post" class="sign-up-form">
+					<div class="input">
+						<label for="FirstName">Firstname</label>
+						<input type="text" name="FirstName" id="FirstName" required />
+					</div>	
+					<div class="input">
+						<label for="LastName">Lastname</label>
+						<input type="text" name="LastName" id="LastName" required />
+					</div>	
+					<div class="input">
+						<label for="Password">Password</label>
+						<input type="password" name="Password" id="Password" required />
+					</div>	
+					<div class="input">
+						<label for="PasswordConfirm">Confirm Password</label>
+						<input type="password" name="PasswordConfirm" id="PasswordConfirm" required />
+					</div>	
+					<div class="submit">
+						<button class="btn-primary submit">Submit</button>
+					</div>	
+			</form>
+			</div>
+		</div>
 	</body>
+
 </html>
