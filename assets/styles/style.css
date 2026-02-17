@@ -3,9 +3,16 @@
 	--black: #1d1d1d;
 	--primary: #adca45;
 	--secondary: #c9cef9;
+	--odin-font: 'Odin logo font', serif;
+}
+
+@font-face {
+	font-family: "Odin logo font";
+	src: url('../fonts/Norse-Bold.otf') format('opentype');
 }
 
 body {
+	margin: 0;
 	background-color: var(--white);
 	color: var(--black);
 	font-family: "Doto", sans-serif;
@@ -44,6 +51,17 @@ body {
 			width: 100px;
 			height: auto;
 		}
+		h2 {
+			font-family: var(--odin-font);
+			color: var(--white);
+			font-size: 3rem;
+			line-height: 1.315;
+		}
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	h1,
 	h2 {
