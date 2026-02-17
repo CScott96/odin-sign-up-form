@@ -3,6 +3,8 @@
 	--black: #1d1d1d;
 	--primary: #adca45;
 	--secondary: #c9cef9;
+	--red: #F34213;
+	--blue: #658E9C;
 	--odin-font: 'Odin logo font', serif;
 }
 
@@ -75,6 +77,15 @@ body {
 			.input {
 				display: flex;
 				flex-direction: column;
+			}
+			input {
+				&:focus {
+					border-color: var(--blue);
+					box-shadow: 6px 5px 5px 0px rgba(168,168,168,0.55);	
+				}
+				&:invalid {
+					border-color: var(--red);
+				}
 			}
 		}
 	}
